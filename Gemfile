@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
+ruby '2.2.4'
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.2.4'
 
 # Declare your gem's dependencies in broker.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -13,4 +17,3 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 
-gem 'bigbluebutton-api-ruby', '~> 1.5.0', :git => 'https://github.com/mconf/bigbluebutton-api-ruby', :tag => 'v1.5.0'

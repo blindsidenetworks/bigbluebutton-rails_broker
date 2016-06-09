@@ -5,7 +5,7 @@ require "broker/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "bigbluebutton-rails_broker"
+  s.name        = "broker"
   s.version     = Broker::VERSION
   s.authors     = ["blindsidenetworks"]
   s.email       = ["support@blindsidenetworks"]
@@ -17,8 +17,8 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "LGPL-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.2.6"
-  s.add_dependency "bigbluebutton-api-ruby", "~> 1.5.0"
+  s.add_dependency "rails", "~> 4.2.4"
+  s.add_dependency "bigbluebutton-api-ruby", "~> 1.4.0"
 
   s.add_development_dependency "sqlite3"
 end
