@@ -10,21 +10,26 @@ module Broker
     def index
     end
 
-    def recording_list
+    # Fetch recordings based on meetingID(s)
+    def recordings
       response_data = bbb_get_recordings(params[:id])
       render_response(response_data)
     end
     
+    # Fetch recordings based on recordID(s)
     def recording
-      render_response({:hello => 'world'})
+      response_data = bbb_get_recording(params[:id])
+      render_response(response_data)
     end
 
-    def recording_publish
-      render_response({:hello => 'world'})
+    def recording_update
+      response_data = bbb_update_recording(params[:id], params[:state])
+      render_response(response_data)
     end
 
     def recording_delete
-      render_response({:hello => 'world'})
+      response_data = bbb_update_recording(params[:id], 'deleted')
+      render_response(response_data)
     end
     
     private
